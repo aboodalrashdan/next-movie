@@ -1,0 +1,29 @@
+/* components/StarRating.module.css */
+.starRating {
+  display: flex;
+}
+
+.filledStar {
+  color: var(--palette-warning-main);
+  font-size: 1.5rem;
+}
+
+.halfStar {
+  color: var(--palette-warning-main);
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.halfStar::after {
+  content: '★';
+  color: var(--palette-warning-main);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+}
+
+.emptyStar {
+  font-size: 1.5rem;
+}

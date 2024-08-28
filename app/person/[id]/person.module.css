@@ -1,0 +1,74 @@
+.container {
+  margin:  0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+.personWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.personPoster img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.name {
+  color: var(--palette-text-primary);
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.birthday {
+  color: var(--palette-text-secondary);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.subTitle {
+  color: var(--palette-text-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.bio {
+  color: var(--palette-text-secondary);
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+
+@media only screen and (min-width: 62rem) {
+  .container {
+    padding: 0 2rem;
+  }
+  
+  .personWrapper {
+    display: grid;
+    grid-template-columns: 40% calc(60% - 2rem);
+  }
+
+  .name {
+      font-size: 1.75rem;
+  }
+
+  .birthday {
+      margin-bottom: 2.875rem;
+  }
+
+  .subTitle {
+      font-size: 0.8rem;
+  }
+
+}

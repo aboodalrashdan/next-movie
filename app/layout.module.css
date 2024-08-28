@@ -1,0 +1,18 @@
+.moviesSection {
+  background-color: var(--background-default);
+  padding: 1rem 0 2rem;
+}
+.nav{
+  background-color: var(--background-default);
+}
+@media only screen and (min-width: 62rem) {
+  .moviesSection{
+      margin-left: 15.625rem;
+  }
+}
+
+
+
+
+
+  
